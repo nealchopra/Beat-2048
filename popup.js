@@ -13,8 +13,8 @@ function sendMessageToContentScript(message, callback) {
     ) {
       var gameState = response.gameState;
   
-      // Call the AI algorithm to get the best move
-      var bestMove = NotSoAIAlgorithm(gameState);
+      // Call the minimax algorithm to get the best move
+      var bestMove = minimaxAlgo(gameState);
   
       // Display the best move on the popup interface
       var bestMoveText = document.getElementById('best-move-text');

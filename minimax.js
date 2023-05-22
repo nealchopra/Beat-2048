@@ -1,5 +1,5 @@
 // Function to find the best move based on the game state
-function NotSoAIAlgorithm(gameState) {
+function minimaxAlgo(gameState) {
     var moves = ['left', 'right', 'up', 'down'];
     var bestMove = null;
     var bestScore = -Infinity;
